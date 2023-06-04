@@ -1,0 +1,72 @@
+section#experience {
+    padding: 5rem 0;
+}
+.exp_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.exp_container>div{
+    background: var(--color-bg-variant);
+    padding: 2.4rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.exp_container>div:hover{
+    background: transparent;
+    border-color: var(--color-bg-variant);
+    cursor: default;
+}
+
+.exp_container .exp__content h2{
+    text-align: center;
+    margin: 0 0 2rem;
+    color: var(--color-primary);
+}
+
+.expDetails-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.exp_details{
+    display: flex;
+    gap: 1rem;
+}
+
+.exp_details>div>h4 {
+    line-height: 1;
+}
+.exp_details svg{
+    color: var(--color-primary);
+}
+
+/*-------------------------- MEDIA QUERIES (MEDIUM Devices)----------------------- */
+
+@media screen and (max-width: 1024px) {
+    .exp_container{
+        grid-template-columns: 1fr;
+    }
+    .exp_container>div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .exp__content{
+        padding: 1rem;
+    }
+}
+
+/*-------------------------- MEDIA QUERIES (SMALL Devices)----------------------- */
+@media screen and (max-width: 600px){
+    .exp_container{
+        gap: 1rem;
+    }
+    .exp_container>div{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
