@@ -130,3 +130,12 @@ body{
         margin-bottom: 2rem;
     }
 }
+
+/* PARTICLE JS */
+
+
+div#particles-js canvas{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
