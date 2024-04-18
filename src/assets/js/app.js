@@ -130,4 +130,4 @@ particlesJS('particles-js',
     }
   }
 
-);
+); 
