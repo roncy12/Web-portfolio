@@ -9,8 +9,8 @@ import Testimonials from './components/testimonials/testimonials'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
 import { Helmet } from 'react-helmet-async';
-import P from './assets/js/particle.js'
-import a from './assets/js/app.js'
+// import P from './assets/js/particle.js'
+// import a from './assets/js/app.js'
 
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-      <div id="particles-js"></div>
+      {/* <div id="particles-js"></div> */}
 
 
     </div>
