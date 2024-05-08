@@ -1,7 +1,7 @@
 import React from 'react'
 import './navigation.css'
 import {AiOutlineHome} from 'react-icons/ai'
-import {BiHome, BiUserCircle} from 'react-icons/bi'
+import {BiUserCircle} from 'react-icons/bi'
 import {BiBookBookmark} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {AiOutlineMessage} from 'react-icons/ai'
@@ -13,10 +13,9 @@ const Navigation = () => {
   const NameClass = activeNav === '#' ? 'active' : '' ;
   const Home = () => setActiveNav('#');
   
-
   return (
-    <nav> 
-      <a href="#" onClick={Home}  className={NameClass}><AiOutlineHome /></a>
+    <nav className="floats-nav"> 
+      <a href="/react-gh-pages" onClick={Home}  className={NameClass}><AiOutlineHome /></a>
       <a href="#about" onClick={()=> setActiveNav('#about')}  className={activeNav === '#about' ? 'active' : ''}><BiUserCircle/></a>
       <a href="#experience" onClick={()=> setActiveNav('#experience')}  className={activeNav === '#experience' ? 'active' : '' }><BiBookBookmark /></a>
       <a href="#services" onClick={()=> setActiveNav('#services')}  className={activeNav === '#services' ? 'active' : '' }><RiServiceLine /></a>

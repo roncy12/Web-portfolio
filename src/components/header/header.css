@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 0;
     overflow: hidden;
 }
 
@@ -46,6 +46,7 @@ header{
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 0;
 }
 
 .scroll_down{
@@ -78,4 +79,20 @@ header{
     .scroll_down{
         display: none;
     }
+}
+
+
+/* CUSTOM NAVIGATION */
+
+div#menu {
+    padding: 1rem 0;
+    display: flex;
+}
+div#menu .menu {
+    display: inline-block;
+    margin-left: auto;
+}
+ul.navPages-list .navPages-item {
+    float: left;
+    padding: 1rem;
 }
