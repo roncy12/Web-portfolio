@@ -1,77 +1,163 @@
 import React from 'react'
 import './portfolio.css'
-import PortfolioImage1 from '../../assets/portfolio1.jpg'
-import PortfolioImage2 from '../../assets/portfolio2.jpg'
-import PortfolioImage3 from '../../assets/portfolio3.jpg'
-import PortfolioImage4 from '../../assets/portfolio4.jpg'
-import PortfolioImage5 from '../../assets/portfolio5.png'
-import PortfolioImage6 from '../../assets/portfolio6.jpg'
+import PortfolioImage1 from '../../assets/Bigcommerce-IconSleep.jpg'
+import PortfolioImage2 from '../../assets/Bigcommerce-MotionMedia.jpg'
+import PortfolioImage3 from '../../assets/Bigcommerce-ScrubPocket.jpg'
+import PortfolioImage4 from '../../assets/Bigcommerce-AlaskaArms.jpg'
+import PortfolioImage5 from '../../assets/Bigcommerce-UniBee4x4.jpg'
+import PortfolioImage6 from '../../assets/Bigcommerce-Spraywell.jpg'
+import PortfolioImage7 from '../../assets/Bigcommerce-ChaiTees.jpg'
+import PortfolioImage8 from '../../assets/Bigcommerce-CWR.jpg'
+import PortfolioImage9 from '../../assets/Bigcommerce-MKMPoolSpa.jpg'
+import PortfolioImage10 from '../../assets/Wordpress-AffordableInteriorDesign.jpg'
+import PortfolioImage11 from '../../assets/Wordpress-AOC.jpg'
+import PortfolioImage12 from '../../assets/Robofriends-white.png'
+import { SiBigcommerce } from "react-icons/si";
+import { FaWordpress } from "react-icons/fa";
+import { IoLogOutOutline } from "react-icons/io5";
+import {FaReact} from "react-icons/fa"
 
 const data = [
   {
     id: 1,
     image: PortfolioImage1,
-    title: 'Crypto Currency Dashboard & Financial Visualization',
+    title: 'Icon Sleep',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization' 
+    demo: 'https://icon-sleep.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
   },
   {
     id: 2,
     image: PortfolioImage2,
-    title: 'Charts templates & infographics in Figma',
+    title: 'Motion Media',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma' 
+    demo: 'https://www.motionmedia.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
   },
   {
     id: 3,
     image: PortfolioImage3,
-    title: 'Figma dashboard UI kit for data design web apps',
+    title: 'Scrub Pocket',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps' 
+    demo: 'https://scrubpocket.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
   },
   {
     id: 4,
     image: PortfolioImage4,
-    title: 'Maintaining tasks and tracking progress',
+    title: 'Alaska arms LLC',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16955822-Maintaining-tasks-and-tracking-progress' 
+    demo: 'https://alaskaarmsllc.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
   },
   {
     id: 5,
     image: PortfolioImage5,
-    title: 'Charts templates & infographics in Figma',
+    title: 'Unibee 4x4',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma' 
+    demo: 'https://unibee4x4.com.au/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
   },
   {
     id: 6,
     image: PortfolioImage6,
-    title: 'Charts templates & infographics in Figma',
+    title: 'Spraywell',
     github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma' 
+    demo: 'https://spraywell.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
+  },
+  {
+    id: 7,
+    image: PortfolioImage7,
+    title: 'Chai Tees',
+    github: 'https://github.com',
+    demo: 'https://www.chai-tees.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
+  },
+  {
+    id: 8,
+    image: PortfolioImage8,
+    title: 'Clean Water Revival, Inc.',
+    github: 'https://github.com',
+    demo: 'https://cwrenviro.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
+  },
+  {
+    id: 9,
+    image: PortfolioImage9,
+    title: 'MKM Pool Spa',
+    github: 'https://github.com',
+    demo: 'https://www.mkmpoolspa.com/',
+    platform: 'Bigcommerce',
+    platformLink: 'https://www.bigcommerce.com/'
+  },
+  {
+    id: 10,
+    image: PortfolioImage10,
+    title: 'Affordable Interior Design',
+    github: 'https://github.com',
+    demo: 'https://affordableinteriordesign.com/',
+    platform: 'WordPress',
+    platformLink: 'https://wordpress.com/'
+  },
+  {
+    id: 11,
+    image: PortfolioImage11,
+    title: 'Always Open Commerce',
+    github: 'https://github.com',
+    demo: 'https://alwaysopencommerce.com/',
+    platform: 'WordPress',
+    platformLink: 'https://wordpress.com/'
+  },
+  {
+    id: 12,
+    image: PortfolioImage12,
+    title: 'Robofriends',
+    github: 'https://github.com',
+    demo: 'https://roncy12.github.io/Updated-Robofriends/',
+    platform: 'React & Redux',
+    platformLink: 'https://react.dev/'
   }
 ]
 
 const Portfolio = () => {
   return (
-    <section id="porfolio">
-      <h5>Recent Work</h5>
-      <h2>Portfolio</h2>
-
-      <div className="container portfolio__container">
+    <section id="portfolio">
+      <h2 className="blurb-title">Recent Work</h2>
+      <div className="container portfolio__container" >
 
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, github, demo, platform, platformLink}) => {
             return(
-              <article key={id} className="portfolio-item">
+              <article key={id} className="portfolio-item" >
                 <div className="portfolio__item-image">
                     <img src={image} alt="{title}" />
                 </div>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target="_blank" rel="noreferrer" >Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer" >Live Demo</a>
+                <div className="portfolio__item-body">
+                  <h5 className="web-platform">
+                    <a href={platformLink} target="_blank" rel="noreferrer" >
+                    {platform === 'Bigcommerce' ? <SiBigcommerce /> : platform === 'WordPress' ? <FaWordpress /> : platform === 'React & Redux' ? <FaReact /> : null} &nbsp;
+
+                      {platform}
+                    </a>
+                  </h5>
+                  <h3>{title}</h3>
+                  
+                  <div className="portfolio__item-cta">
+                    <a href={demo} className="btn" target="_blank" rel="noreferrer" >Website <IoLogOutOutline /></a>
+                    {/* <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer" >Live Demo</a> */}
+
+                  </div>
                 </div>
+
               </article>
             )
           })

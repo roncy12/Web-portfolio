@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './components/header/header'
-import Navigation from './components/nav/navigation'
+// import Navigation from './components/nav/navigation'
 import About from './components/about/about'
 import Experience from './components/experience/experience'
 import Services from './components/services/services'
@@ -15,13 +15,15 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Navigation />
+      {/* <Navigation /> */}
+      <main class="body">
       <About />
+      {/* <Testimonials /> */}
       <Experience />
       <Services />
       <Portfolio />
-      <Testimonials />
       <Contact />
+      </main>
       <Footer />
 
 

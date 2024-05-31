@@ -1,9 +1,15 @@
 section#experience {
     padding: 5rem 0;
+    /* background-image: linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%);
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+    background-image: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% );
 }
+
 .exp_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 .exp_container>div{
@@ -15,10 +21,14 @@ section#experience {
 }
 
 .exp_container>div:hover{
-    background: transparent;
+    /* background: transparent;
     border-color: var(--color-bg-variant);
-    cursor: default;
+    cursor: default; */
 }
+.exp_container>div:hover h4, .exp_container>div:hover small{
+    /* color: #1070bc; */
+}
+
 
 .exp_container .exp__content h2{
     text-align: center;
@@ -26,24 +36,53 @@ section#experience {
     color: var(--color-primary);
 }
 
-.expDetails-container{
+.expDetails-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1rem;
+    grid-column-gap: 1rem;
 }
 
 .exp_details{
     display: flex;
     gap: 1rem;
+    align-items: center;
+    flex-direction: column;
 }
 
 .exp_details>div>h4 {
     line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
 }
 .exp_details svg{
     color: var(--color-primary);
 }
-
+article.exp_details {
+    background: transparent;
+    border-radius: 20px;
+    opacity: 1;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, .1);
+    width: 100% !important;
+    max-width: 100%;
+    padding: 2rem;
+}
+.exp_container>div {
+    padding: 2.4rem;
+    border-radius: 2rem;
+    /* border: 1px solid rgba(204,220,255,.12); */
+    transition: var(--transition);
+    /* box-shadow: 0px 10px 20px 0px #0000000D; */
+    background: transparent;
+    padding: 0;
+}
+.container.exp_container {
+    width: 90%;
+}
 /*-------------------------- MEDIA QUERIES (MEDIUM Devices)----------------------- */
 
 @media screen and (max-width: 1024px) {
@@ -51,16 +90,24 @@ section#experience {
         grid-template-columns: 1fr;
     }
     .exp_container>div{
-        width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
     .exp__content{
-        padding: 1rem;
+
+    }
+    .expDetails-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+
 /*-------------------------- MEDIA QUERIES (SMALL Devices)----------------------- */
+@media screen and (max-width: 800px){
+    .expDetails-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 @media screen and (max-width: 600px){
     .exp_container{
         gap: 1rem;
@@ -69,4 +116,120 @@ section#experience {
         width: 100%;
         padding: 2rem 1rem;
     }
+    .expDetails-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
+
+.exp_details svg {
+    font-size: 30px;
+    color: #fff;
+}
+
+article.exp_details.html svg {
+    color: #e34c26;
+}
+article.exp_details.css svg {
+    color: #264de4;
+}
+article.exp_details.scss svg {
+    color: #CD6799;
+}
+article.exp_details.js svg {
+    color: #f0db4f;
+}
+article.exp_details.bootstrap svg {
+    color: #563d7c;
+}
+article.exp_details.reactjs svg {
+    color: #61DBFB;
+}
+article.exp_details.laravel svg {
+    color: #f55247;
+}
+article.exp_details.bc svg {
+    color: #000;
+}
+article.exp_details.wordpress svg {
+    color: #21759b;
+}
+article.exp_details.shopify svg {
+    color: #96bf48;
+}
+article.exp_details.graphql svg {
+    color: #e10098;
+}
+article.exp_details.postman svg {
+    color: #ef5b25;
+}
+article.exp_details.jquery svg {
+    color: #264de4;
+}
+article.exp_details.vs svg {
+    color: #007ACC;
+}
+section#experience .blurb-title {
+    color: #fff;
+}
+article.exp_details.git svg {
+    color: #f34f29;
+}
+
+.work-experience .container {
+    padding: 2rem 2rem 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: #0d1117;
+    border-radius: 2rem;
+    width: 90%;
+}
+.work-experience .container h2, 
+.work-experience .container p {
+    font-family: 'Montserrat';
+}
+.work-experience .container h2 {
+    font-size: 18px;
+}
+.work-experience p{
+    position: relative;
+}
+.work-experience p::after {
+    content: "";
+    display: block;
+    font-size: 61px;
+    color: #61DBFB;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid #61DBFB;
+    width: 9%;
+    margin-top: 1rem;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
+.work-experience .container svg {
+    font-size: 28px;
+    color: #feb602;
+}
+
+@media screen and (min-width: 1025px) {
+    .expDetails-container article.exp_details:nth-last-child(-n+1) {
+        grid-column: 4 / span 1;
+        justify-self: center;
+    }
+    
+    .expDetails-container article.exp_details:nth-last-child(2) {
+        grid-column: 3 / span 1;
+        justify-self: center;
+    }
+    .expDetails-container article.exp_details:nth-last-child(3) {
+        grid-column: 2 / span 1;
+        justify-self: center;
+    }
+    
+}
+
+

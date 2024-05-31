@@ -1,6 +1,6 @@
-.services__container{
+.services__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
 
@@ -11,6 +11,7 @@
     height: fit-content;
     transition: var(--transition);
     cursor: pointer;
+    height: 100%;
 }
 
 .service:hover{
@@ -18,7 +19,9 @@
     border-color: var(--color-primary-variant);
     cursor: default;
 }
-
+.service:hover ul.service__list li {
+    color: #1070bc;
+}
 .service__head{
     background: var(--color-primary);
     padding: 2rem;
@@ -43,6 +46,17 @@ ul.service__list li {
     fill: var(--color-primary);
 } 
 
+
+div#services .about--content ul li svg {
+    fill: green;
+    padding-top: 4px;
+}
+div#services .about--content ul li {
+    list-style: none;
+}
+div#services .about--content ul{
+    margin-left: 0;
+}
 /*-------------------------- MEDIA QUERIES (MEDIUM Devices)----------------------- */
 
 @media screen and (max-width: 1024px) {

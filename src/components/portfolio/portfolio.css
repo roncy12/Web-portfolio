@@ -1,7 +1,18 @@
+section#portfolio {
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
+    background-color: #0d1117;
+    margin-top: 4rem;
+    padding: 4rem 0;
+}
+section#portfolio  h2.blurb-title{
+    color: #fff;
+    font-size: 40px;
+}
 .container.portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
+    width: 90%;
 }
 
 .portfolio-item{
@@ -10,27 +21,71 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    background-color: rgba(204,220,255,.12);
 }
 
 .portfolio-item:hover{
-    border-color: var(--color-primary-variant);
+    border-color: rgba(204,220,255,.12);
     background: transparent;
+    background: #0d1117;
+    cursor: pointer;
 }
-
+.portfolio-item:hover h3, .portfolio-item:hover h5{
+    color: #fff;
+}
 .portfolio__item-image{
     border-radius: 1.5rem;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
-
-.portfolio-item h3{
-    margin: 1.2rem 0 2rem;
+.portfolio-item h5 a{
+    color: #fff;
 }
-
+.portfolio-item h3 {
+    margin: 0rem 0 1rem;
+}
 .portfolio__item-cta {
     display: flex;
     gap: 1.5rem;
 }
+.portfolio__item-cta a, .portfolio__item-cta a:hover{
+    background: #1070bc;
+    color: #fff;
+}
 
+
+/* CUSTOMS  */
+.portfolio__item-body h5 {
+    font-size: 16px;
+}
+.portfolio__item-cta a {
+    border-radius: 12rem;
+    padding: 8px 2rem;
+    vertical-align: baseline;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-column-gap: 8px;
+}
+
+.portfolio__item-body {
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.05);
+}
+
+.portfolio-item:hover .portfolio__item-body{
+    background-color: #161b22;
+}
+article.portfolio-item img {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+}
+.portfolio-item:hover img {
+    transform: scale(1.15);
+}
 @media screen and (max-width: 1024px) {
     .container.portfolio__container{
         grid-template-columns: 1fr 1fr;
@@ -44,3 +99,5 @@
         gap: 1rem;
     }
 }
+
+

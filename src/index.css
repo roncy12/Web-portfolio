@@ -15,10 +15,10 @@
 :root{
     --color-bg: #132448;
     --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4) ;
+    --color-primary: #1070bc;
+    --color-primary-variant: #1070bc ;
     --color-white : #fff;
-    --color-1ight: rgba(255, 255, 255, e.6) ;
+    --color-1ight: #0e1111;
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
@@ -29,16 +29,21 @@
 html{
     scroll-behavior : smooth
 }
-
+html, body {
+    overflow-x: hidden;
+}
 body{
     font-family: var(--font-family-p);
     background: var(--color-bg) ;
     color: var( --color-white) ;
     line-height: 1.7;
     /* background-image: url(../src/assets/bg-texture.png) ; */
-    background: #080808;
+    background: #ffffff;
+    overflow-x: hidden;
 }
-
+body.is-open {
+    overflow: hidden;
+}
 /* General Styles */
 .container {
     width: var(--container-width-lg);
@@ -123,6 +128,14 @@ body{
 }
 
 /*-------------------------- MEDIA QUERIES (SMALL Devices)----------------------- */
+@media screen and (max-width: 900px) {
+    h2.blurb-title {
+        font-size: 25px;
+    }
+    section#portfolio  h2.blurb-title {
+        font-size: 25px;
+    }
+}
 @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-md);
@@ -140,4 +153,11 @@ div#particles-js canvas{
     position: fixed;
     top: 0;
     z-index: -1;
+}
+.d-none{
+    display: none;
+}
+
+.text-dark{
+    color: #0e1111;
 }
