@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/devportfolio/static/css/main.d57687fc.css",
+    "main.js": "/devportfolio/static/js/main.9b4d4250.js",
+    "static/media/herobanner-bg1.jpg": "/devportfolio/static/media/herobanner-bg1.7e2d99ced789d19852db.jpg",
+    "static/media/Roncy_CV.pdf": "/devportfolio/static/media/Roncy_CV.9998e9880d8b578cd558.pdf",
+    "static/media/herobanner-bg.jpg": "/devportfolio/static/media/herobanner-bg.8f8b101fe644f8bd0525.jpg",
+    "static/media/Contact-us-bg.jpg": "/devportfolio/static/media/Contact-us-bg.8277c774d5137aaccd70.jpg",
+    "static/media/6508162.jpg": "/devportfolio/static/media/6508162.2b6ffb8c0e9d3a90af42.jpg",
+    "static/media/profile-pic.png": "/devportfolio/static/media/profile-pic.6c4a6a6b33a998b41a72.png",
+    "static/media/Bigcommerce-CWR.jpg": "/devportfolio/static/media/Bigcommerce-CWR.44de0fc366ca020b3735.jpg",
+    "static/media/Bigcommerce-MotionMedia.jpg": "/devportfolio/static/media/Bigcommerce-MotionMedia.8744da09414d4d3f9dc3.jpg",
+    "static/media/Bigcommerce-UniBee4x4.jpg": "/devportfolio/static/media/Bigcommerce-UniBee4x4.fdafea3539dce618327b.jpg",
+    "static/media/Bigcommerce-ScrubPocket.jpg": "/devportfolio/static/media/Bigcommerce-ScrubPocket.99161b12504e8adedfc9.jpg",
+    "static/media/Bigcommerce-AlaskaArms.jpg": "/devportfolio/static/media/Bigcommerce-AlaskaArms.9ad92a1fbec73c3a156c.jpg",
+    "static/media/Bigcommerce-MKMPoolSpa.jpg": "/devportfolio/static/media/Bigcommerce-MKMPoolSpa.a3cfbd5877ba79b8877b.jpg",
+    "static/media/Bigcommerce-ChaiTees.jpg": "/devportfolio/static/media/Bigcommerce-ChaiTees.4524077f552da8c3da3f.jpg",
+    "static/media/Bigcommerce-Spraywell.jpg": "/devportfolio/static/media/Bigcommerce-Spraywell.e4355db910d83bb8362d.jpg",
+    "static/media/Wordpress-AffordableInteriorDesign.jpg": "/devportfolio/static/media/Wordpress-AffordableInteriorDesign.3266803d0b8361f5ad0c.jpg",
+    "static/media/Wordpress-AOC.jpg": "/devportfolio/static/media/Wordpress-AOC.c8303ddbf02fda3fc869.jpg",
+    "static/media/Bigcommerce-IconSleep.jpg": "/devportfolio/static/media/Bigcommerce-IconSleep.045bf88f4da3267d07fa.jpg",
+    "static/media/Robofriends-white.png": "/devportfolio/static/media/Robofriends-white.dc4deaaf334cb41ce822.png",
+    "index.html": "/devportfolio/index.html",
+    "main.d57687fc.css.map": "/devportfolio/static/css/main.d57687fc.css.map",
+    "main.9b4d4250.js.map": "/devportfolio/static/js/main.9b4d4250.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d57687fc.css",
+    "static/js/main.9b4d4250.js"
+  ]
+}
