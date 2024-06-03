@@ -1,0 +1,130 @@
+section#contact {
+    padding-bottom: 5rem;
+    margin-top: 0 !important;
+    padding-top: 5rem;
+    background: url(../../assets/img/Contact-us-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    position: relative;
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+    transition: .5s;
+    background-size: 200% auto;
+    background: #1070bc;
+}
+.contact__option:hover{
+    background-position: right center;
+}
+
+.contact__option-icon {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.contact__option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+section#contact button.btn{
+    background: #1070bc;
+    color: #fff;
+    font-family: 'Montserrat';
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 2px solid var(--color-primary-variant);
+    resize: none;
+    color: #222;
+}
+
+.form-section input, .form-section textarea {
+    border-color: #0e1111 !important;
+}
+
+
+
+section#contact form input, section#contact form textarea {
+    color: #222;
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.container.contact__container .formFooter-heightMask,
+.container.contact__container .formFooter.f6.branding21{
+    display: none;
+}
+.formFooter-heightMask{
+    display: none;
+}
+.jfBrandingBadgeContainerVariant1 .jfBrandingBadge{
+    display: none;
+}
+
+.supernova .form-all, .form-all {
+    margin: 0;
+}
+
+.container.contact__container iframe{
+    height: 625px !important;
+}
+
+.container.contact__container::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+    background: #EBF7FF;
+    height: 56px;
+    border: 1px solid #EBF7FF;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container.contact__container{
+        width: var(--container-width-sm);
+    }
+}

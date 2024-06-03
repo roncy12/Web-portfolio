@@ -1,6 +1,5 @@
 import React from 'react'
-import './services.css'
-import ME from '../../assets/herobanner-bg1.jpg'
+import ME from '../../assets/img/herobanner-bg1.jpg'
 import { IoShieldCheckmark } from "react-icons/io5"
 
 const Services = () => {

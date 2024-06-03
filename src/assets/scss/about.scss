@@ -1,0 +1,163 @@
+section .about--container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 5%;
+    align-items: center;
+    width: 90%;
+    
+    .about-me{
+        width: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 2rem;
+        background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
+        display: grid;
+        place-items: center;
+        background: transparent;
+        aspect-ratio: unset;
+    }
+}
+
+
+.about-me_img{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+    transform: unset;
+
+    &:hover{
+        transform: rotate(0);
+    }
+}
+
+
+.about--cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    & > .about-card{
+        background: var(--color-bg-variant);
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        transition: var(--transition);
+
+        &:hover{
+            background: transparent;
+            border-color: var(--color-primary-variant);
+        }
+
+        & > h5{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        & > small{
+            font-size: 18px;
+            color: #fff;
+            font-family: 'Montserrat';
+        }
+    }
+}
+
+.about-icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+h2.blurb-title {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #0e1111;
+    font-weight: 700;
+}
+
+.about--content{
+    ul {
+        list-style: disc;
+        margin-left: 1.5rem;
+
+        li {
+            font-family: 'Montserrat';
+            list-style: disc;
+            font-size: 18px;
+        }
+    }
+
+    p{
+        margin: 0 0 1rem;
+        color: #0e1111;
+        font-family: 'Montserrat';
+        font-size: 18px;
+    }
+    .btn-primary {
+        color: #fff;
+        padding: 1rem 3rem;
+        border-radius: 30px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-family: 'Montserrat';
+
+        &:hover{
+            color: #1070bc;
+            border: 1px solid #1070bc;
+            font-weight: 600;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .about--content ul li {
+        font-size: 16px;
+    }
+    .about--content p {
+        font-size: 16px;
+    }
+    section .about--container {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section .about--container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about-me{
+        width: 100%;
+        margin: 2rem auto 4rem;
+    }
+    .about--content p{
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .about-me{
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+    .about--cards{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .about--cards .about-card:last-child {
+        grid-column: span 2;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about--content{
+        text-align: center;
+    }
+    .about--content p{
+        margin: 1.5rem 0;
+    }
+
+}

@@ -1,12 +1,23 @@
 import React from 'react'
-import './contact.css'
 import {MdOutlineMail} from 'react-icons/md'
 import JotformEmbed from 'react-jotform-embed';
+
+class MyComponent1 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef(); // Create a ref instance
+  }
+
+  render() {
+    return <JotformEmbed ref={this.myRef} src="https://form.jotform.com/241363419108453" className="myIframe" />;
+  }
+}
+
 
 const Contact = () => {
   return (
     <section id="contact">
-      <h2 className="blurb-title">Get In Touch Contact Me</h2>
+      <h2 className="blurb-title">Get In Touch</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -17,8 +28,8 @@ const Contact = () => {
             <a href="mailto:jroncynavs12@gmail.com">Send a message</a>
           </article>
         </div>
-
-        <JotformEmbed src="https://form.jotform.com/241363419108453" className="myIframe" />
+      <MyComponent1 />
+        {/* <JotformEmbed src="https://form.jotform.com/241363419108453" className="myIframe" /> */}
         
         {/* <script type="text/javascript" src="https://form.jotform.com/jsform/241363419108453"></script>
          */}

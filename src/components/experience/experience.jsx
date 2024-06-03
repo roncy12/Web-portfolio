@@ -1,7 +1,7 @@
 import React from 'react'
-import './experience.css'
-import {BsShieldFillCheck} from 'react-icons/bs'
-import { BsFiletypeScss } from "react-icons/bs"
+// import './experience.css'
+// import {BsShieldFillCheck} from 'react-icons/bs'
+// import { BsFiletypeScss } from "react-icons/bs"
 import {FaHtml5} from "react-icons/fa"
 import {FaCss3Alt} from "react-icons/fa"
 import {IoLogoJavascript} from "react-icons/io5"
@@ -27,7 +27,7 @@ const Experience = () => {
   return (
     <section id="experience">
        <h2 className="blurb-title">Professional Experience</h2>
-        <div className="work-experience">
+        <div className="work-experience" data-aos="fade-up" data-aos-duration="1000">
           <div className="container">
               <div className="content-container">
                 <TbCertificate />

@@ -1,0 +1,133 @@
+nav.floats-nav{
+    background: rgba (0, 0, 8, 0.3);
+    width: max-content;
+    display: block;
+    padding:0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) ;
+    bottom: 2rem;
+    display:flex;
+    gap: 6.8rem;
+    /* border-radius : 3rem; */
+    backdrop-filter: blur(15px) ;
+}
+
+nav a{
+    background: transparent;
+    padding: 1rem 1rem;
+    display:flex;
+    color: var(--color-light);
+    font-size : 1.1rem;
+
+    &:hover{
+        color: #1070bc;
+    }
+    &.active {
+        border-bottom: 4px solid #1070bc;
+        border-radius: 0;
+        color: #1070bc;
+    }
+}
+
+div#menu .container {
+    width: 90%;
+}
+.d-none{
+    display: none;
+}
+ul.navPages-list .navPages-item svg {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    nav a {
+        padding: 1rem 1rem 1rem 0;
+    }
+    ul.navPages-list .navPages-item svg {
+        display: inline !important;
+        fill: #fff;
+    }
+
+    ul.navPages-list .navPages-item a .linkLabel{
+        display: none;
+    }
+    nav.navigation{
+        display: block !important;  
+    }
+    nav.navigation .navPages-list{
+        width: max-content;
+        padding:0.7rem 1.7rem;
+        z-index: 200;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%) ;
+        bottom: 2rem;
+        display:flex;
+        gap: 0;
+        border-radius : 3rem;
+        backdrop-filter: blur(15px) ;
+        background-image: linear-gradient( 89.7deg,  rgba(0,0,0,1) -10.7%, rgba(53,92,125,1) 88.8% );
+    }
+    
+    nav .navPages-list a {
+        background: transparent;
+        padding: 12px;
+        border-radius: 100%;
+        display: flex;
+        color: var(--color-light);
+        font-size: 1rem;
+    }
+    
+    nav .navPages-list a.active{
+        background: var(--color-primary);
+        color: var(--color-white);
+    }
+    ul.navPages-list .navPages-item {
+        padding-left: 0;
+    }
+
+    /* Mobile custom */
+    .floats-nav-custom.mobile .banner-flex {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0 auto;
+        padding: 2rem 5%;
+        border-top: 1px solid rgba(53,92,125,1);
+    }
+    .banner-flex h4, .banner-flex ul.contact-info li {
+        color: #000;
+        display: block;
+        font-family: 'Montserrat';
+    }
+    
+    .floats-nav-custom.is-open .cta {
+        margin: 8px 0 0;
+    }
+    ul.contact-info {
+        width: 100%;
+    }
+    .dropdown-bottom {
+        position: absolute;
+        bottom: 10%;
+        color: #000;
+        padding: 0 5%;
+    }
+    .floats-nav-custom.mobile .banner-flex h4 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    ul.contact-info li {
+        display: flex !important;
+        align-items: center;
+        column-gap: 8px;
+    }
+    .floats-nav-custom.mobile .banner-flex .cta .btn:last-child {
+        border: 1px solid #1070bc;
+        color: #1070bc;
+    }
+    .floats-nav-custom.mobile .banner-flex .cta .btn:last-child:hover {
+        color: #fff;
+    }
+}

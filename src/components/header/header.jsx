@@ -1,11 +1,9 @@
 
 import React from 'react'
-import './header.css'
 import CTA from './CTA'
-import Profile from '../../assets/profile-pic.png'
+import Profile from '../../assets/img/profile-pic.png'
 import HeaderSocials from './HeaderSocials'
-import mobileMenu from './HeaderSocials'
-import Logo from '../../assets/roncy.png'
+import Logo from '../../assets/img/roncy.png'
 import Navigation1 from '../../components/nav/navigation'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { Tilt } from 'react-tilt'
@@ -31,7 +29,7 @@ const Header = () => {
       <div className="navPages-container" id="menu" data-menu>
         <div className="container">
           <div className="header-logo">
-            <a href='/react-gh-pages'>
+            <a href='/webdev-portfolio'>
             <img src={Logo} alt="header logo" />
             </a>
           </div>
@@ -45,14 +43,14 @@ const Header = () => {
               </ul>
               <div className="cta">
                 <a href={CV} download className='btn btn-primary'>Download CV</a>
-                <a href="#contact" class="btn letsTalk">Let's Talk</a>
+                <a href="#contact" className="btn letsTalk">Let's Talk</a>
               </div>
             </div>
-            <div class="dropdown-bottom">©2024.  Roncy Nava</div>
+            <div className="dropdown-bottom">©2024.  Roncy Nava</div>
           </div>
-          <a href="#" className="mobileMenu-toggle">
+          <button className="mobileMenu-toggle">
             <GiHamburgerMenu />
-          </a>
+          </button>
         </div>
       </div>
       <div className="container header-container">

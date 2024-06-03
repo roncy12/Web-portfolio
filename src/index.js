@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import App from './App';
 import "./index.css";
-import './custom-js';
+import './assets/js/custom-js'
 
 ReactDOM.render(<App/>, document.querySelector("#root"))
