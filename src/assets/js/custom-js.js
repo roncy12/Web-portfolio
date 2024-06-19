@@ -1,11 +1,13 @@
 import jQuery from 'jquery';
 
-var lastScrollTop = 0;
+
 window.addEventListener("scroll", function(){ 
-var st = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+// var lastScrollTop = 0;
+var st = window.scrollY;
+// var st = (window.scrollY || window.pageYOffset || document.body.scrollTop) + (document.documentElement && document.documentElement.scrollTop || 0);
 var navPage = document.getElementsByClassName("navPages-container");
 
-if(st==0){
+if(st===0){
     for (let i = 0; i < navPage.length; i++) {
         const div = navPage[i];
         div.classList.remove("header-fixed");
@@ -17,7 +19,7 @@ if(st==0){
     }
 }
 
-lastScrollTop = st <= 0 ? 0 : st; 
+// lastScrollTop = st <= 0 ? 0 : st; 
 }, false);
 
 
@@ -40,12 +42,12 @@ jQuery(document).ready(function() {
 jQuery(document).ready(function() {
     jQuery('ul.navPages-list .navPages-item:not(:first-child) a').click(function(e) {
         e.preventDefault(); 
-
+        var headerHeight = 0;
         var target = jQuery(this).data('target'); 
-        if(target=='#about' || target=='#services'){
-          var headerHeight = jQuery("div#menu").outerHeight() + 55;
+        if(target==='#about' || target==='#services'){
+          headerHeight = jQuery("div#menu").outerHeight() + 55;
         }else{
-          var headerHeight = jQuery("div#menu").outerHeight() - 20;
+          headerHeight = jQuery("div#menu").outerHeight() - 20;
         }
         
 
